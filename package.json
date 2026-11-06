@@ -7,12 +7,14 @@
   "bin": {
     "mcp-server-template": "dist/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit",
-    "test": "npm run build && node --test test/"
+    "test": "npm run build && node --test test/server.test.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
@@ -25,7 +27,13 @@
   "engines": {
     "node": ">=20"
   },
-  "keywords": ["mcp", "model-context-protocol", "claude", "template", "typescript"],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "template",
+    "typescript"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ayushrajdev-dev/mcp-server-template.git"
